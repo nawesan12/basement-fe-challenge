@@ -9,8 +9,8 @@ export default function Footer() {
             src="/footer-waves.webp"
             alt=""
             width={200}
-            height={100}
-            className="max-h-[12vw]"
+            height={200}
+            className="w-[20vw] aspect-video relative bottom-4 right-4"
           />
           WEAR
         </span>
