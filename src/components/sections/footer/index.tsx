@@ -32,6 +32,11 @@ export default function Footer() {
             height={100}
           />
 
+<div className="">
+<span>ENOUGH ABOUT US, <span className="underline">TELL US ABOUT YOU</span> </span>
+<span>WE ARE THE BASEMENT</span>
+</div>
+  
           &copy; basement.studio &reg; all rights reserved.
         </section>
         <section></section>
