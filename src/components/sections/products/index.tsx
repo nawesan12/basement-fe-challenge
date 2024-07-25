@@ -2,27 +2,26 @@ import Image from "next/image";
 
 export default function ProductsSection() {
   return (
-    <section className="p-4">
+    <section className="p-4 font-semibold">
       <div className="mx-auto py-8 sm:py-12">
         <ul className="grid gap-4 sm:grid-cols-3 lg:grid-cols-3">
           <li>
             <a href="#" className="group block overflow-hidden">
-              <Image
-                src="/products/tee.webp"
-                alt=""
-                width={600}
-                height={600}
-                className="h-[350px] w-full object-contain transition duration-500 group-hover:scale-105 sm:h-[450px]"
-              />
+              <section className="bg-[linear-gradient(to_top,#111,#000)]">
+                <Image
+                  src="/products/tee.webp"
+                  alt=""
+                  width={600}
+                  height={600}
+                  className="h-[350px] border-b-4 border-white mb-2 w-full object-contain transition duration-500 sm:h-[450px]"
+                />
+              </section>
 
-              <div className="relative bg-white pt-3">
-                <p>
-                  <span className="sr-only"> Regular Price </span>
+              <div>
+                <p className="flex justify-between">
+                  <span className=""> Black t-shirt</span>
 
-                  <span className="tracking-wider text-gray-900">
-                    {" "}
-                    £24.00 GBP{" "}
-                  </span>
+                  <span className="tracking-wider"> $7.95 </span>
                 </p>
               </div>
             </a>
@@ -30,22 +29,21 @@ export default function ProductsSection() {
 
           <li>
             <a href="#" className="group block overflow-hidden">
-              <Image
-                src="/products/hoodie.webp"
-                alt=""
-                width={600}
-                height={600}
-                className="h-[350px] w-full object-contain transition duration-500 group-hover:scale-105 sm:h-[450px]"
-              />
+              <section className="bg-[linear-gradient(to_top,#111,#000)]">
+                <Image
+                  src="/products/hoodie.webp"
+                  alt=""
+                  width={600}
+                  height={600}
+                  className="h-[350px] border-b-4 border-white mb-2 w-full object-contain transition duration-500 sm:h-[450px]"
+                />
+              </section>
 
-              <div className="relative bg-white pt-3">
-                <p>
-                  <span className="sr-only"> Regular Price </span>
+              <div>
+                <p className="flex justify-between">
+                  <span className=""> Black hoodie </span>
 
-                  <span className="tracking-wider text-gray-900">
-                    {" "}
-                    £24.00 GBP{" "}
-                  </span>
+                  <span className="tracking-wider"> $13 </span>
                 </p>
               </div>
             </a>
@@ -53,22 +51,21 @@ export default function ProductsSection() {
 
           <li>
             <a href="#" className="group block overflow-hidden">
-              <Image
-                src="/products/cap.webp"
-                alt=""
-                width={600}
-                height={600}
-                className="h-[350px] w-full object-contain transition duration-500 group-hover:scale-105 sm:h-[450px]"
-              />
+              <section className="bg-[linear-gradient(to_top,#111,#000)]">
+                <Image
+                  src="/products/cap.webp"
+                  alt=""
+                  width={600}
+                  height={600}
+                  className="h-[350px] border-b-4 border-white mb-2 w-full object-contain transition duration-500 sm:h-[450px]"
+                />
+              </section>
 
-              <div className="relative bg-white pt-3">
-                <p>
-                  <span className="sr-only"> Regular Price </span>
+              <div>
+                <p className="flex justify-between">
+                  <span> Black cap </span>
 
-                  <span className="tracking-wider text-gray-900">
-                    {" "}
-                    £24.00 GBP{" "}
-                  </span>
+                  <span className="tracking-wider"> $23 </span>
                 </p>
               </div>
             </a>
