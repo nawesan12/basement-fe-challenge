@@ -4,7 +4,7 @@ import CartProduct from "./cart-product";
 export default function Cart() {
 
   return (
-    <SheetContent>
+    <SheetContent className="bg-black p-0">
       <SheetHeader>
         <SheetTitle>
           <h3 className="text-7xl text-center px-2 text-white mt-20 whitespace-nowrap">

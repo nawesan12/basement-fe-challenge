@@ -6,7 +6,7 @@ export default function Product({ product }: { product: any }) {
   const { products, addProductToCart } = useStore()
   return (
     <li>
-      <a href="#" className="group block overflow-hidden">
+      <a href="/" className="group block overflow-hidden">
         <section className="relative bg-[linear-gradient(to_top,#111,#000)]">
           <Image
             src={product.image}

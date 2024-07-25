@@ -1,16 +1,16 @@
+"use client"
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
-  SheetContent,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Cart from "./cart";
+import useStore from "@/lib/store/products-store";
 
 export default function Header() {
+  const { products } = useStore()
+
   return (
     <header className="p-6 flex items-center justify-between">
       <span>basement.</span>
@@ -24,7 +24,7 @@ export default function Header() {
 
       <Sheet>
         <SheetTrigger asChild>
-          <Button className="rounded-full font-bold border">Cart (0)</Button>
+          <Button className="rounded-full font-bold border">Cart ({products.length})</Button>
         </SheetTrigger>
         <Cart />
       </Sheet>
