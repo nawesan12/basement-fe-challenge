@@ -12,7 +12,7 @@ export default function Marquee() {
   useEffect(() => {
     // Levitation effect for the images
     gsap.to(imageRef1.current, {
-      y: -10, // Move up by 10 pixels
+      y: -17, // Move up by 10 pixels
       repeat: -1, // Repeat infinitely
       yoyo: true, // Reverse animation direction
       ease: "power1.inOut", // Smooth easing
@@ -20,7 +20,7 @@ export default function Marquee() {
     });
 
     gsap.to(imageRef2.current, {
-      y: -10, // Move up by 10 pixels
+      y: -20, // Move up by 10 pixels
       repeat: -1, // Repeat infinitely
       yoyo: true, // Reverse animation direction
       ease: "power1.inOut", // Smooth easing
@@ -74,16 +74,16 @@ export default function Marquee() {
         alt=""
         ref={imageRef1}
         className="absolute z-20 left-20 object-contain"
-        width={100}
-        height={100}
+        width={120}
+        height={120}
       />
       <Image
         src="/marquee-shape2.svg"
         alt=""
         ref={imageRef2}
         className="absolute z-20 right-24 bottom-8 object-contain"
-        width={100}
-        height={100}
+        width={120}
+        height={120}
       />
     </section>
   );

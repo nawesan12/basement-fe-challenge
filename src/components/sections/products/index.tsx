@@ -1,12 +1,19 @@
+"use client";
 import Product from "@/components/ui/product";
+import useStore from "@/lib/store/products-store";
 import Image from "next/image";
 
 export default function ProductsSection() {
+  const products = useStore((state) => state.products);
+  const addProductToCart = useStore((state) => state.addProductToCart);
+
   return (
     <section className="p-4 font-semibold">
       <div className="mx-auto py-8 sm:py-12">
         <ul className="grid gap-4 sm:grid-cols-3 lg:grid-cols-3">
-          <Product />
+          {products.map((product: any, index: number) => (
+            <Product key={index} {...product} />
+          ))}
 
           <li>
             <a href="#" className="group block overflow-hidden">

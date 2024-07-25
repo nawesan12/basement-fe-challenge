@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-export default function Product() {
+export default function Product({ product }: { product: any }) {
   return (
     <li>
       <a href="#" className="group block overflow-hidden">
         <section className="relative bg-[linear-gradient(to_top,#111,#000)]">
           <Image
-            src="/products/tee.webp"
+            src={product.image}
             alt=""
             width={600}
             height={600}
@@ -28,8 +28,8 @@ export default function Product() {
 
         <div>
           <p className="flex justify-between">
-            <span>Black t-shirt</span>
-            <span className="tracking-wider">$7.95</span>
+            <span>{product.name}</span>
+            <span className="tracking-wider">${product.price}</span>
           </p>
         </div>
       </a>

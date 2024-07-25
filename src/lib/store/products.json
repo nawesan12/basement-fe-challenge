@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Black t-shirt",
+    "image": "/products/tee.webp",
+    "price": "7,95"
+  },
+  {
+    "id": 2,
+    "name": "Black hoodie",
+    "image": "/products/hoodie.webp",
+    "price": "13"
+  },
+  {
+    "id": 3,
+    "name": "Black cap",
+    "image": "/products/cap.webp",
+    "price": "23"
+  }
+]
