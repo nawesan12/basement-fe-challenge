@@ -1,3 +1,3 @@
 export default function ProductsSection() {
-  return <></>;
+  return <>products</>;
 }
