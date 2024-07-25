@@ -73,7 +73,7 @@ export default function Marquee() {
         src="/marquee-shape.svg"
         alt=""
         ref={imageRef1}
-        className="absolute left-20 object-contain"
+        className="absolute z-20 left-20 object-contain"
         width={100}
         height={100}
       />
@@ -81,7 +81,7 @@ export default function Marquee() {
         src="/marquee-shape2.svg"
         alt=""
         ref={imageRef2}
-        className="absolute right-24 bottom-8 object-contain"
+        className="absolute z-20 right-24 bottom-8 object-contain"
         width={100}
         height={100}
       />

@@ -16,7 +16,10 @@ export default function OG() {
     }, 2000);
   }, []);
   return (
-    <section className="h-screen grid place-items-center fixed" ref={imageRef}>
+    <section
+      className="h-screen bg-black z-50 grid place-items-center fixed"
+      ref={imageRef}
+    >
       <Image
         src="/OG.webp"
         alt="Basement Studio Supply"
