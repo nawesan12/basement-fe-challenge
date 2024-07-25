@@ -3,52 +3,77 @@ import Image from "next/image";
 export default function ProductsSection() {
   return (
     <section className="p-4">
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8 lg:grid-cols-3 lg:gap-8">
-        <a href="#" className="overflow-hidden min-h-min">
-          <div className="relative h-auto w-auto aspect-auto border-b-4 border-white bg-[linear-gradient(to_top,_#111,_#000)]">
-            <Image src="/products/tee.webp" alt="" width={800} height={800} />
-          </div>
+      <div className="mx-auto py-8 sm:py-12">
+        <ul className="grid gap-4 sm:grid-cols-3 lg:grid-cols-3">
+          <li>
+            <a href="#" className="group block overflow-hidden">
+              <Image
+                src="/products/tee.webp"
+                alt=""
+                width={600}
+                height={600}
+                className="h-[350px] w-full object-contain transition duration-500 group-hover:scale-105 sm:h-[450px]"
+              />
 
-          <div className="pt-3 font-medium">
-            <div className="flex items-center justify-between">
-              <p className="tracking-wide">Black t-shirt</p>
+              <div className="relative bg-white pt-3">
+                <p>
+                  <span className="sr-only"> Regular Price </span>
 
-              <p>$7.95</p>
-            </div>
-          </div>
-        </a>
-        <a href="#" className="overflow-hidden min-h-min">
-          <div className="relative h-auto w-auto aspect-auto border-b-4 border-white bg-[linear-gradient(to_top,_#111,_#000)]">
-            <Image
-              src="/products/hoodie.webp"
-              alt=""
-              width={800}
-              height={800}
-            />
-          </div>
+                  <span className="tracking-wider text-gray-900">
+                    {" "}
+                    £24.00 GBP{" "}
+                  </span>
+                </p>
+              </div>
+            </a>
+          </li>
 
-          <div className="pt-3 font-medium min-h-min">
-            {" "}
-            <div className="flex items-center justify-between">
-              <p className="tracking-wide">Black t-shirt</p>
+          <li>
+            <a href="#" className="group block overflow-hidden">
+              <Image
+                src="/products/hoodie.webp"
+                alt=""
+                width={600}
+                height={600}
+                className="h-[350px] w-full object-contain transition duration-500 group-hover:scale-105 sm:h-[450px]"
+              />
 
-              <p>$7.95</p>
-            </div>
-          </div>
-        </a>
-        <a href="#" className="overflow-hidden">
-          <div className="relative h-auto w-auto aspect-auto border-b-4 border-white bg-[linear-gradient(to_top,_#111,_#000)]">
-            <Image src="/products/cap.webp" alt="" width={800} height={800} />
-          </div>
+              <div className="relative bg-white pt-3">
+                <p>
+                  <span className="sr-only"> Regular Price </span>
 
-          <div className="pt-3 font-medium">
-            <div className="flex items-center justify-between">
-              <p className="tracking-wide">Black t-shirt</p>
+                  <span className="tracking-wider text-gray-900">
+                    {" "}
+                    £24.00 GBP{" "}
+                  </span>
+                </p>
+              </div>
+            </a>
+          </li>
 
-              <p>$7.95</p>
-            </div>
-          </div>
-        </a>
+          <li>
+            <a href="#" className="group block overflow-hidden">
+              <Image
+                src="/products/cap.webp"
+                alt=""
+                width={600}
+                height={600}
+                className="h-[350px] w-full object-contain transition duration-500 group-hover:scale-105 sm:h-[450px]"
+              />
+
+              <div className="relative bg-white pt-3">
+                <p>
+                  <span className="sr-only"> Regular Price </span>
+
+                  <span className="tracking-wider text-gray-900">
+                    {" "}
+                    £24.00 GBP{" "}
+                  </span>
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
   );
