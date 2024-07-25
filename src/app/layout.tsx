@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import "./animations.css";
 
 const grotesque = localFont({
   src: [
     {
-      path: "/fonts/BasementGrotesque-Regular.otf",
+      path: "./fonts/BasementGrotesque-Regular.otf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "/fonts/BasementGrotesque-Bold.otf",
+      path: "./fonts/BasementGrotesque-Bold.otf",
       weight: "600",
       style: "normal",
     },
     {
-      path: "/fonts/BasementGrotesque-Black.otf",
+      path: "./fonts/BasementGrotesque-Black.otf",
       weight: "700",
       style: "bold",
     },
