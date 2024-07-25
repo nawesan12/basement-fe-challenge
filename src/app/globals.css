@@ -70,4 +70,17 @@
 
 body {
   background: #000;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
 }
