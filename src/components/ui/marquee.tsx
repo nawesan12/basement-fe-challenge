@@ -63,9 +63,6 @@ export default function Marquee() {
           <span className="mx-2">
             - A man can{`'`}t have enough basement. swag
           </span>
-          <span className="mx-2">
-            -- A man can{`'`}t have enough basement. swag
-          </span>
         </div>
       </div>
 
@@ -73,7 +70,7 @@ export default function Marquee() {
         src="/marquee-shape.svg"
         alt=""
         ref={imageRef1}
-        className="absolute z-20 left-20 object-contain"
+        className="absolute z-20 left-20 object-contain size-[10vw] md:size-[11vw] lg:size-[11vw]"
         width={120}
         height={120}
       />
@@ -81,7 +78,7 @@ export default function Marquee() {
         src="/marquee-shape2.svg"
         alt=""
         ref={imageRef2}
-        className="absolute z-20 right-24 bottom-8 object-contain"
+        className="absolute z-20 right-24 bottom-8 object-contain  size-[10vw] md:size-[11vw] lg:size-[11vw]"
         width={120}
         height={120}
       />

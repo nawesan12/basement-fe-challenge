@@ -68,6 +68,10 @@
   }
 }
 
+html {
+  overflow-x:hidden;
+}
+
 body {
   background: #000;
   overflow-x: hidden;
