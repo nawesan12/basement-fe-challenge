@@ -1,11 +1,19 @@
+"use client"
 import Image from "next/image";
 import useStore from "@/lib/store/products-store";
+import { toast } from "sonner";
 
 export default function Product({ product }: { product: any }) {
   const { products, addProductToCart } = useStore();
+
+  function addToCart(product: any) {
+    addProductToCart(product)
+    toast.success("Product added to cart!")
+    console.log(products)
+  }
   return (
     <li className="h-3/4">
-      <a href="/" className="group block overflow-hidden">
+      <section className="group block overflow-hidden">
         <section className="relative bg-[linear-gradient(to_top,#111,#000)]">
           <Image
             src={product.image}
@@ -15,7 +23,7 @@ export default function Product({ product }: { product: any }) {
             className="border-b-4 border-white mb-2 h-full object-contain transition duration-500 sm:h-[450px]"
           />
           <button
-            onClick={() => addProductToCart(product)}
+            onClick={() => addToCart(product)}
             className="text-black [text-shadow:-1px_-1px_0_white,_1px_-1px_0_white,_-1px_1px_0_white,_1px_1px_0_white] absolute inset-0 flex items-center justify-center text-4xl font-bold bg-black bg-opacity-50 transition opacity-0 group-hover:opacity-100"
           >
             <span className="absolute z-10">
@@ -37,7 +45,7 @@ export default function Product({ product }: { product: any }) {
             <span className="tracking-wider">${product.price}</span>
           </p>
         </div>
-      </a>
+      </section>
     </li>
   );
 }
