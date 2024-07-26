@@ -7,13 +7,22 @@ export default function OG() {
   const imageRef = useRef(null);
 
   useEffect(() => {
+
+
     setTimeout(() => {
+      document.body.style.overflowY = "hidden"
+
       gsap.to(imageRef.current, {
         y: -window.innerHeight * 2, // Move up by the height of the screen
         duration: 1, // Duration of the animation in seconds
         opacity: 0, // Fade out
       });
     }, 2000);
+
+    return () => {
+      document.body.style.overflowY = "scroll"
+    }
+
   }, []);
   return (
     <section
