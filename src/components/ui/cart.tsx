@@ -2,9 +2,8 @@ import { SheetContent, SheetFooter, SheetHeader, SheetTitle } from "./sheet";
 import CartProduct from "./cart-product";
 
 export default function Cart() {
-
   return (
-    <SheetContent className="bg-black p-0">
+    <SheetContent className="bg-black p-0 w-screen lg:h-3/4 md:h-full lg:w-2/4 md:w-3/4 flex flex-col justify-between">
       <SheetHeader>
         <SheetTitle>
           <h3 className="text-7xl text-center px-2 text-white mt-20 whitespace-nowrap">
@@ -17,7 +16,7 @@ export default function Cart() {
         </SheetTitle>
       </SheetHeader>
 
-      <section className="cart-content p-4 min-h-96">
+      <section className="cart-content p-4 min-h-96 h-full overflow-y-auto overflow-x-hidden">
         <CartProduct />
       </section>
 
@@ -32,5 +31,5 @@ export default function Cart() {
         </section>
       </SheetFooter>
     </SheetContent>
-  )
+  );
 }
