@@ -6,9 +6,9 @@ export default function Cart() {
     <SheetContent className="bg-black p-0 w-screen lg:h-3/4 md:h-full lg:w-2/4 md:w-3/4 flex flex-col justify-between">
       <SheetHeader>
         <SheetTitle>
-          <h3 className="lg:text-7xl text-6xl text-center px-2 text-white mt-20 whitespace-nowrap">
+          <h3 className="lg:text-7xl md:text-6xl text-[30vw] text-center leading-none px-2 text-white mt-20 lg:whitespace-nowrap">
             {" "}
-            YOUR &nbsp;
+            YOUR <span className="hidden lg:block md:block">&nbsp;</span>
             <span className="text-black [text-shadow:-1px_-1px_0_white,_1px_-1px_0_white,_-1px_1px_0_white,_1px_1px_0_white]">
               CART
             </span>
@@ -21,11 +21,12 @@ export default function Cart() {
       </section>
 
       <SheetFooter>
-        <section className="border-t border-white w-full flex justify-between">
-          <div className="font-bold py-4 px-6 lg:px-8 grid text-lg lg:text-3xl text-white whitespace-nowrap">
-            TOTAL: $37,50
+        <section className="lg:border-t border-white w-full flex-col lg:flex-row text-center flex justify-between">
+          <div className="font-bold py-4 px-6 lg:px-8 text-3xl text-white whitespace-nowrap flex justify-between">
+            <span>TOTAL: </span> &nbsp; <span>$37,50</span>
           </div>
-          <span className="text-black py-4 px-6 lg:px-8 font-bold text-3xl [text-shadow:-1px_-1px_0_white,_1px_-1px_0_white,_-1px_1px_0_white,_1px_1px_0_white] border-l border-l-white gap-4">
+          <hr className="w-11/12 pt-4 block mx-auto lg:hidden" />
+          <span className="text-black py px-6 lg:px-8 font-bold text-6xl md:text-7xl text-center lg:text-3xl [text-shadow:-1px_-1px_0_white,_1px_-1px_0_white,_-1px_1px_0_white,_1px_1px_0_white] lg:border-l border-l-white gap-4">
             CHECKOUT
           </span>
         </section>
