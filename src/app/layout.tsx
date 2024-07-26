@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import "./animations.css";
+import LenisController from "@/components/lenis";
 
 const grotesque = localFont({
   src: [
@@ -35,7 +36,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={grotesque.className}>{children}</body>
+      <body className={grotesque.className}>
+        <LenisController>{children}</LenisController>
+      </body>
     </html>
   );
 }
