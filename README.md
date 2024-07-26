@@ -18,8 +18,12 @@ I coded manually the main texts of the header and the footer, but then i discove
 |---|---|
 | <img src="main-view-desktop.png" alt="Basement Supply Main View Desktop"> | <img src="main-view-mobile.png" alt="Basement Supply Main View Mobile"> |
 
-Once i had all the styles well achieved, i started with the animations, the levitating shapes and the cart sheet were my favourites parts because of the GSAP's versatility and possibilities that provides
+Once i had all the styles well achieved, i started with the animations, the levitating shapes and the cart sheet were my favourites parts because of the GSAP's versatility and possibilities that provides.
+
+<img src="cart-view-mobile.png" alt="Basement Supply Main View Mobile" style="float: left; margin-right: 10px;">
 
 ## Conclusion
+
+
 
 ## Details
