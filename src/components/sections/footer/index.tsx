@@ -28,7 +28,7 @@ export default function Footer() {
         </h3> */}
       </section>
 
-      <section className="border-t-2 mt-4 border-white w-full p-4 lg:grid-cols-6 ">
+      {/* <section className="border-t-2 mt-4 border-white w-full p-4 lg:grid-cols-6 ">
         <section className="grid-cols-3 ">
           <h2>basement.</h2>
           <Image src="/globe.png" alt="" width={100} height={100} />
@@ -42,7 +42,7 @@ export default function Footer() {
           &copy; basement.studio &reg; all rights reserved.
         </section>
         <section></section>
-      </section>
+      </section> */}
     </footer>
   );
 }
