@@ -9,7 +9,7 @@ export default function OG() {
   useEffect(() => {
     setTimeout(() => {
       gsap.to(imageRef.current, {
-        y: -window.innerHeight, // Move up by the height of the screen
+        y: -window.innerHeight * 2, // Move up by the height of the screen
         duration: 1, // Duration of the animation in seconds
         opacity: 0, // Fade out
       });

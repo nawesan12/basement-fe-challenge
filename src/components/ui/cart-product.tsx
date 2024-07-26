@@ -2,20 +2,20 @@ import Image from "next/image";
 
 export default function CartProduct({ product }: { product: any }) {
   return (
-    <article className="p-4 border border-white grid grid-cols-6">
-      <div className="bg-[linear-gradient(to_top,#111,#000)]  col-span-2">
+    <article className="p-4 border border-white grid grid-cols-4">
+      <div className="bg-[linear-gradient(to_top,#111,#000)]  col-span-1">
         <Image
           src={product.image}
-          className="max-h-60 object-contain"
+          className="max-h-40 object-contain"
           alt={`Basement Studio ${product.name}`}
           width={600}
           height={600}
         />
       </div>
 
-      <div className="col-span-4 ml-2 font-bold flex flex-col justify-between text-white">
+      <div className="col-span-3 ml-2 font-bold flex flex-col justify-between text-white">
         <div>
-          <h4 className="lg:text-3xl text-lg uppercase">{product.name}</h4>
+          <h4 className="lg:text-3xl mb-1 text-lg uppercase">{product.name}</h4>
           <h5 className="opacity-70 font-bold">
             {product.description}
           </h5>
@@ -53,7 +53,7 @@ export default function CartProduct({ product }: { product: any }) {
               </li>
             </ul>
           </div>
-          <p className="col-span-1 text-xl md:text-xl lg:text-2xl font-bold pr-2">
+          <p className="col-span-1 text-xl md:text-xl lg:text-3xl font-bold pr-2">
             ${product.price}
           </p>
         </div>

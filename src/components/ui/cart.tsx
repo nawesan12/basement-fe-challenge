@@ -26,7 +26,7 @@ export default function Cart() {
         </SheetTitle>
       </SheetHeader>
 
-      <section className="cart-content p-4 overflow-y-auto overflow-x-hidden">
+      <section className="cart-content p-4 overflow-y-auto flex flex-col gap-4 overflow-x-hidden">
         {
           products.length > 0 ?
             products.map((product: any, index: number) => (
@@ -36,7 +36,7 @@ export default function Cart() {
               />
             ))
             :
-            <p>There are not products yet!</p>
+           ( <p className="text-white">There are not products yet!</p>)
         }
       </section>
 
